@@ -1,0 +1,18 @@
+<script>
+window.gleenWidget.on("ticket:agent_handoff_initiated", function (data) {
+    // Minimize the Gleen widget instead of fully closing it
+    window.gleenWidget.closeTicket();
+    window.gleenWidget.close();
+
+    document.getElementById("helix-chat-container").style.display = "none";
+
+    const script = document.createElement("script");
+    script.id = "ze-snippet";
+    script.src = "https://static.zdassets.com/ekr/snippet.js?key=020063c3-9669-4c6e-9ff8-4c38f1488645";
+    script.async = true;
+    script.onload = () => {
+      window.zE("messenger", "open");
+    };
+    document.body.appendChild(script);
+});
+</script>
