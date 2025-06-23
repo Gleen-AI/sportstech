@@ -8,8 +8,21 @@
     }
     
     if (window.gleenWidget) {
+      // API for sending Custom messages on behalf of user
       window.gleenWidget.open(); 
       window.gleenWidget.sendMessage(message);
     }
   }
   </script>
+
+
+
+# Example of calling this function. Don't just Copy Paste as it. This is an example. 
+<body>
+        <p>Demo of SportsTech Production setup</p>
+        <div class="menu">
+          <h3>Choose buying advice:</h3>
+          <button onclick="startAdvice('treadmill')">Treadmill Buying Advice</button>
+          <button onclick="startAdvice('bike')">Bike Purchase Advice</button>
+        </div>
+  </body>
