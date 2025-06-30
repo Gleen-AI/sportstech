@@ -1,4 +1,12 @@
 <script>
+  document.gleenConfig = {
+    company: "sportstech-eu",
+    apiBaseUrl: "https://eu.alhena.ai"
+  };
+</script>
+<script src="https://eu.alhena.ai/sdk/gleenWidget.js"></script>
+  
+<script>
   function startAdvice(type) {
     let message = '';
     if (type === 'treadmill') {
