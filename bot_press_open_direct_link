@@ -1,4 +1,4 @@
 window.gleenWidget.on("icebreaker_question:postback", (data) => {
             document.getElementById("helix-chat-container").style.display = "none";
-            window.location.href = "https://chat.sportstech.link/"
+            window.open("https://chat.sportstech.link/", "_blank");
           });
